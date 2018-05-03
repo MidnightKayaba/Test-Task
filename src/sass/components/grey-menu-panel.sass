@@ -1,0 +1,19 @@
+.grey-menu-panel
+  display: flex
+  width: 100%
+  background: #F4F5FC
+  justify-content: space-around
+  &__item
+    height: 50px
+    width: auto
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: url("../img/icon/cursor/cursor.png"), pointer
+    font-size: 12px
+    font-weight: 600
+    color: #7E83AA
+  &__item.active
+    border-bottom: 4px solid #EF5350
+  &__item:not(.active):hover &__text
+    color: #EF5350

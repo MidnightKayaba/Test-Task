@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/app.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__left-block">
+        <div class="header__logo">
+            <img src="../dist/img/logo/logo.png" alt='"ГдеВсе"' class="header__logo-img">
+        </div>
+        <div class="header__locations">
+            <div class="header__locations-icon"></div>
+            <span class="header__locations-text">
+            Москва, Воронеж, Таганрог...
+        </span>
+        </div>
+    </div>
+    <div class="header__right-block">
+        <div class="header__new-event">
+            <div class="header__new-event-title">
+                Создать новое событие
+            </div>
+        </div>
+        <div class="header__notice">
+            <div class="header__notice-img"></div>
+            <span class="header__notice-mark"></span>
+        </div>
+        <div class="header__avatar">
+            <img src="../dist/img/avatars/photo@2x.png" alt="" class="header__avatar-img">
+        </div>
+    </div>
+
+</header>
+
+<main class="main">
+    <div class="main__left-panel">
+        <div class="link-panel-edp">
+            <div class="link-panel-edp__item active">
+                <span class="link-panel-edp__count">12</span>
+                <span class="link-panel-edp__text">События</span>
+            </div>
+            <div class="hr _vertical"></div>
+            <div class="link-panel-edp__item">
+                <span class="link-panel-edp__count">7</span>
+                <span class="link-panel-edp__text">Диалоги</span>
+            </div>
+            <div class="hr _vertical"></div>
+            <div class="link-panel-edp__item">
+                <span class="link-panel-edp__count">12</span>
+                <span class="link-panel-edp__text">Люди</span>
+            </div>
+        </div>
+
+        <div class="grey-menu-panel">
+            <div class="grey-menu-panel__item">
+                <span class="grey-menu-panel__text">Жду ответа</span>
+            </div>
+            <div class="grey-menu-panel__item active">
+                <span class="grey-menu-panel__text">В планах</span>
+            </div>
+            <div class="grey-menu-panel__item">
+                <span class="grey-menu-panel__text">Прошедшие</span>
+            </div>
+            <div class="grey-menu-panel__item">
+                <span class="grey-menu-panel__text">Мои</span>
+            </div>
+        </div>
+
+        <div class="sub-menu-event">
+            <div class="sub-menu-event__item">
+                <span class="sub-menu-event__text">9 Апреля 2017</span>
+            </div>
+            <div class="hr _vertical _vertical-min"></div>
+            <div class="sub-menu-event__item">
+                <span class="sub-menu-event__text">Воскресение</span>
+            </div>
+            <div class="hr _vertical"></div>
+            <div class="sub-menu-event__item">
+                <span class="sub-menu-event__calendar"></span>
+                <span class="sub-menu-event__text">Календарь</span>
+                <span class="sub-menu-event__dropdown"></span>
+            </div>
+            <div class="hr _vertical"></div>
+            <div class="sub-menu-event__item">
+                <span class="sub-menu-event__text">Все</span>
+                <span class="sub-menu-event__dropdown"></span>
+            </div>
+        </div>
+
+
+        <div class="event-cards">
+            <div class="event-cards__scroll">
+
+                <div class="event-card">
+                    <div class="event-card__header">
+                        <div class="event-card__data">
+                            <h2 class="h2 h2__event-card">Поход на Криминальное чтиво</h2>
+
+                            <div class="info-event">
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/calendar/ic-calendar-normal.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">6 Апреля</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-clock.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">12:15</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-rub.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">300</span>
+                                </div>
+                            </div>
+                            <div class="info-event">
+                                <div class="info-event__item info-event__item_event-card">
+                                    <img src="../dist/img/icon/info-event/ic-metro.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">Маяковская</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-location.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">Невский проспект, 20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-card__solution">
+                            <img src="../dist/img/event-preview/event1.png" alt="" class="event-card__solution-img">
+                            <div class="event-card__solution-select">
+                                <div class="event-card__solution-selected">
+                                    <span class="event-card__solution-selected-text">Без решения</span>
+                                    <span class="event-card__solution-dropdown"></span>
+                                </div>
+                                <div class="event-card__options">
+                                    <div class="event-card__option">Пойду</div>
+                                    <div class="event-card__option">Возможно</div>
+                                    <div class="event-card__option">Не пойду</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card__description">
+                        <div class="named-avatar _mb">
+                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img">
+                            <span class="named-avatar__text">Сергей Воронин</span>
+                        </div>
+                        <p class="event-card__text">
+                            Пошли на Криминальное чтиво! Когда еще на большом экране посмотрим? Кто со мной? Будет точно
+                            интересно!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-card__header">
+                        <div class="event-card__data">
+                            <h2 class="h2 h2__event-card">Прогулка по лесу</h2>
+
+                            <div class="info-event">
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/calendar/ic-calendar-normal.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">6 Апреля</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-clock.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">12:15</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-rub.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">200</span>
+                                </div>
+                            </div>
+                            <div class="info-event">
+                                <div class="info-event__item info-event__item_event-card">
+                                    <img src="../dist/img/icon/info-event/ic-metro.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">Владимирская</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-location.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">Кузнечный проспект, 5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-card__solution">
+                            <img src="../dist/img/event-preview/event2.png" alt="" class="event-card__solution-img">
+                            <div class="event-card__solution-select">
+                                <div class="event-card__solution-selected">
+                                    <span class="event-card__solution-selected-text">Без решения</span>
+                                    <span class="event-card__solution-dropdown"></span>
+                                </div>
+                                <div class="event-card__options">
+                                    <div class="event-card__option">Пойду</div>
+                                    <div class="event-card__option">Возможно</div>
+                                    <div class="event-card__option">Не пойду</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card__description">
+                        <div class="named-avatar _mb">
+                            <img src="../dist/img/avatars/Irin.png" alt="" class="named-avatar__img">
+                            <span class="named-avatar__text">Ирина Павлова</span>
+                        </div>
+                        <p class="event-card__text">
+                            Лес — прекрасен и опасен одновременно. Любуясь могучими соснами, собирая грибы или следуя за
+                            пташкой, вы рискуете углубиться в чащу и сбиться с дороги. Перед походом в лес не забывайте
+                            о важных вещах. которые могут спасти вашу жизнь.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-card__header">
+                        <div class="event-card__data">
+                            <h2 class="h2 h2__event-card">Поход на Криминальное чтиво</h2>
+
+                            <div class="info-event">
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/calendar/ic-calendar-normal.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">6 Апреля</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-clock.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">12:15</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-rub.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">300</span>
+                                </div>
+                            </div>
+                            <div class="info-event">
+                                <div class="info-event__item info-event__item_event-card">
+                                    <img src="../dist/img/icon/info-event/ic-metro.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">Маяковская</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-location.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">Невский проспект, 20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-card__solution">
+                            <img src="../dist/img/event-preview/event1.png" alt="" class="event-card__solution-img">
+                            <div class="event-card__solution-select">
+                                <div class="event-card__solution-selected">
+                                    <span class="event-card__solution-selected-text">Без решения</span>
+                                    <span class="event-card__solution-dropdown"></span>
+                                </div>
+                                <div class="event-card__options">
+                                    <div class="event-card__option">Пойду</div>
+                                    <div class="event-card__option">Возможно</div>
+                                    <div class="event-card__option">Не пойду</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card__description">
+                        <div class="named-avatar _mb">
+                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img">
+                            <span class="named-avatar__text">Сергей Воронин</span>
+                        </div>
+                        <p class="event-card__text">
+                            Пошли на Криминальное чтиво! Когда еще на большом экране посмотрим? Кто со мной? Будет точно
+                            интересно!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-card__header">
+                        <div class="event-card__data">
+                            <h2 class="h2 h2__event-card">Прогулка по лесу</h2>
+
+                            <div class="info-event">
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/calendar/ic-calendar-normal.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">6 Апреля</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-clock.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">12:15</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-rub.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">200</span>
+                                </div>
+                            </div>
+                            <div class="info-event">
+                                <div class="info-event__item info-event__item_event-card">
+                                    <img src="../dist/img/icon/info-event/ic-metro.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">Владимирская</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-location.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">Кузнечный проспект, 5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-card__solution">
+                            <img src="../dist/img/event-preview/event2.png" alt="" class="event-card__solution-img">
+                            <div class="event-card__solution-select">
+                                <div class="event-card__solution-selected">
+                                    <span class="event-card__solution-selected-text">Без решения</span>
+                                    <span class="event-card__solution-dropdown"></span>
+                                </div>
+                                <div class="event-card__options">
+                                    <div class="event-card__option">Пойду</div>
+                                    <div class="event-card__option">Возможно</div>
+                                    <div class="event-card__option">Не пойду</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card__description">
+                        <div class="named-avatar _mb">
+                            <img src="../dist/img/avatars/Irin.png" alt="" class="named-avatar__img">
+                            <span class="named-avatar__text">Ирина Павлова</span>
+                        </div>
+                        <p class="event-card__text">
+                            Лес — прекрасен и опасен одновременно. Любуясь могучими соснами, собирая грибы или следуя за
+                            пташкой, вы рискуете углубиться в чащу и сбиться с дороги. Перед походом в лес не забывайте
+                            о важных вещах. которые могут спасти вашу жизнь.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-card__header">
+                        <div class="event-card__data">
+                            <h2 class="h2 h2__event-card">Поход на Криминальное чтиво</h2>
+
+                            <div class="info-event">
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/calendar/ic-calendar-normal.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">6 Апреля</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-clock.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">12:15</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-rub.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">300</span>
+                                </div>
+                            </div>
+                            <div class="info-event">
+                                <div class="info-event__item info-event__item_event-card">
+                                    <img src="../dist/img/icon/info-event/ic-metro.png" alt="" class="info-event__icon">
+                                    <span class="info-event__text">Маяковская</span>
+                                </div>
+                                <div class="info-event__item">
+                                    <img src="../dist/img/icon/info-event/ic-location.png" alt=""
+                                         class="info-event__icon">
+                                    <span class="info-event__text">Невский проспект, 20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-card__solution">
+                            <img src="../dist/img/event-preview/event1.png" alt="" class="event-card__solution-img">
+                            <div class="event-card__solution-select">
+                                <div class="event-card__solution-selected">
+                                    <span class="event-card__solution-selected-text">Без решения</span>
+                                    <span class="event-card__solution-dropdown"></span>
+                                </div>
+                                <div class="event-card__options">
+                                    <div class="event-card__option">Пойду</div>
+                                    <div class="event-card__option">Возможно</div>
+                                    <div class="event-card__option">Не пойду</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card__description">
+                        <div class="named-avatar _mb">
+                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img">
+                            <span class="named-avatar__text">Сергей Воронин</span>
+                        </div>
+                        <p class="event-card__text">
+                            Пошли на Криминальное чтиво! Когда еще на большом экране посмотрим? Кто со мной? Будет точно
+                            интересно!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main__right-panel">
+        <div class="full-info-event">
+            <div class="full-info-event__header">
+                <div class="full-info-event__header-title">
+                    <h2 class="h2">Собираемся на шашлыки</h2>
+                    <div class="select-solution"></div>
+                </div>
+
+
+                <div class="grey-menu-panel">
+                    <div class="grey-menu-panel__item">
+                        <span class="grey-menu-panel__text">Общая беседа</span>
+                    </div>
+                    <div class="grey-menu-panel__item active">
+                        <span class="grey-menu-panel__text">О событии</span>
+                    </div>
+                    <div class="grey-menu-panel__item">
+                        <span class="grey-menu-panel__text">Расписание</span>
+                    </div>
+                    <div class="grey-menu-panel__item">
+                        <span class="grey-menu-panel__text">Список покупок</span>
+                    </div>
+                </div>
+            </div>
+            <div class="full-info-event__content">
+                <div class="scroll">
+                    <div class="full-info-event__general">
+                        <div class="info-event info-event__full-info-event">
+                            <div class="info-event__item">
+                                <img src="../dist/img/icon/calendar/ic-calendar-normal.png" alt=""
+                                     class="info-event__icon">
+                                <span class="info-event__text">6 Апреля</span>
+                            </div>
+                            <div class="info-event__item">
+                                <img src="../dist/img/icon/info-event/ic-clock.png" alt="" class="info-event__icon">
+                                <span class="info-event__text">12:15</span>
+                            </div>
+                            <div class="info-event__item">
+                                <img src="../dist/img/icon/info-event/ic-rub.png" alt="" class="info-event__icon">
+                                <span class="info-event__text">300</span>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="info-event info-event__full-info-event">
+                            <div class="info-event__item info-event__item_event-card">
+                                <img src="../dist/img/icon/info-event/ic-metro.png" alt="" class="info-event__icon">
+                                <span class="info-event__text">Маяковская</span>
+                            </div>
+                            <div class="info-event__item">
+                                <img src="../dist/img/icon/info-event/ic-location.png" alt="" class="info-event__icon">
+                                <span class="info-event__text">Невский проспект, 20</span>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="full-info-event__description">
+                            <div class="named-avatar _mb named-avatar__full-info-event">
+                                <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img">
+                                <span class="named-avatar__text">Сергей Воронин</span>
+                            </div>
+                            <p class="text">
+                                Предлагаю сходить в Пик на терминатора! Кто со мной? Будет точно интересно! Можем
+                                собраться
+                                вечером или днем, например в субботу.
+                            </p>
+                            <img src="../dist/img/article/img.png" alt=""
+                                 class="full-info-event__description-img _large">
+                            <p class="text">
+                                Шашлык из говядины — штука невероятно вкусная, если его правильно приготовить. Чтобы
+                                лишний
+                                раз не бегать по магазинам в поисках нужных вещей, составим заранее список всего
+                                необходимого, а также меню предстоящего застолья. Копчености и сосиски понадобятся на
+                                время,
+                                пока будет готовиться шашлык. Закуски из лаваша с различными начинками, лаваш с сыром на
+                                мангале, печеный картофель — поверьте, все это будет очень кстати.
+                            </p>
+                            <div class="full-info-event__description-img-text">
+                                <img src="../dist/img/article/meat-vegetables-gemuesepiess-mushrooms-111131.png" alt=""
+                                     class="full-info-event__description-img _small">
+                                <p class="text">
+                                    Шашлык из говядины — штука невероятно вкусная, если его правильно приготовить. Чтобы
+                                    лишний раз не бегать по магазинам в поисках нужных вещей, составим заранее список
+                                    всего
+                                    необходимого, а также меню
+                                </p>
+                            </div>
+                            <p class="text">
+                                Шашлык из говядины - штука невероятно вкусная, если его правильно приготовить. Чтобы
+                                лишний
+                                раз не бегать по магазинам в поисках нужных вещей,
+                            </p>
+                            <div class="full-info-event__description-img-text">
+                                <img src="../dist/img/article/food-holiday-vacation-summer.png" alt=""
+                                     class="full-info-event__description-img _small">
+                                <p class="text">
+                                    Копчености и сосиски понадобятся на время, пока будет готовиться шашлык. Закуски из
+                                    лаваша с различными начинками, лаваш с сыром на мангале, печеный картофель –
+                                    поверьте,
+                                    все это будет очень кстати.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-info-event__statistics-locations">
+                        <div class="statistics-block">
+                            <div class="statistics-block__menu">
+                                <div class="statistics-block__link">
+                                    <span class="statistics-block__text">Приглашены</span>
+                                    <span class="statistics-block__count">(25)</span>
+                                </div>
+                                <div class="statistics-block__link">
+                                    <span class="statistics-block__text">Идут</span>
+                                    <span class="statistics-block__count">(11)</span>
+                                </div>
+                                <div class="statistics-block__link active">
+                                    <span class="statistics-block__text">Не уверены</span>
+                                    <span class="statistics-block__count">(12)</span>
+                                </div>
+                            </div>
+                            <div class="statistics-block__avatars">
+                                <div class="statistics-block__avatars-row">
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistics-block__avatars-row">
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistics-block__avatars-row">
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                    <div class="statistics-block__avatars-element">
+                                        <div class="named-avatar _vertical">
+                                            <img src="../dist/img/avatars/Serg.png" alt="" class="named-avatar__img _vertical">
+                                            <span class="named-avatar__text _vertical">Сергей</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistics-block__avatars-arrow _l"></div>
+                                <div class="statistics-block__avatars-arrow _r"></div>
+                            </div>
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__faq">
+        <div class="footer__faq-question">
+            <span class="footer__text">Как добавить событие</span>
+        </div>
+        <div class="footer__faq-question">
+            <span class="footer__text">Справка</span>
+        </div>
+        <div class="footer__faq-question">
+            <span class="footer__text">Найти друзей</span>
+        </div>
+    </div>
+    <div class="footer__copy">
+        <span class="footer__text">&copy; GdeVse 2017</span>
+    </div>
+</footer>
+<script>
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 47.220471, lng: 38.921718},
+            zoom: 15
+        });
+        var marker = new google.maps.Marker({
+            position: {lat: 47.220471, lng: 38.921718},
+            map: map,
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpbMmnZnf3GQXDE2K675gtwcURkcKzpKI&callback=initMap"
+        async defer></script>
+<script src="../dist/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.header
+  width: 100%
+  height: 56px
+  padding: 0 16px
+  box-shadow: 0 2px 6px rgba(55, 64, 95,0.1)
+  display: flex
+  justify-content: space-between
+
+
+  &__left-block,
+  &__right-block
+    display: flex
+    align-items: center
+
+
+  &__logo
+    width: 89px
+    height: 33px
+    cursor: url("../img/icon/cursor/cursor.png"), pointer
+  &__logo-img
+    min-width: 100%
+    height: 100%
+
+
+  &__locations
+    font-weight: 600
+    font-size: 12px
+    color: #7e83aa
+    margin-left: 85px
+    cursor: url("../img/icon/cursor/cursor.png"), pointer
+  &__locations-icon
+    width: 16px
+    height: 16px
+    display: inline-block
+    background: url("../img/icon/cities/ic-cities-normal.png")
+    vertical-align: middle
+    margin-right: 9px
+  &__locations:hover &__locations-icon
+    background: url("../img/icon/cities/ic-cities-hover.png")
+  &__locations:active &__locations-icon
+    background: url("../img/icon/cities/ic-cities-active.png")
+
+
+  &__new-event
+    width: 20px
+    height: 20px
+    position: relative
+    background: url("../img/icon/add/add-normal.png")
+    cursor: url("../img/icon/cursor/cursor.png"), pointer
+  &__new-event-title
+    display: none
+    font-weight: 600
+    font-size: 12px
+    color: #fff
+    padding: 7px 10px
+    position: absolute
+    top: -5px
+    left: -173px
+    border-radius: 3px
+    background: #3f455f
+  &__new-event-title:after
+    content: ''
+    position: absolute
+    top: 11px
+    right: -4px
+    width: 8px
+    height: 8px
+    background: #3f455f
+    transform: rotate(45deg)
+  &__new-event:hover
+    background: url("../img/icon/add/add-hover.png")
+  &__new-event:hover &__new-event-title
+    display: block
+
+
+  &__notice
+    margin: -4px 40px 0 40px
+    width: 27px
+    height: 27px
+    position: relative
+    text-align: center
+    cursor: url("../img/icon/cursor/cursor.png"), pointer
+  &__notice-img
+    width: 15px
+    height: 15px
+    background: url("../img/icon/bell/ic-bell-normal.png")
+    display: inline-block
+    vertical-align: bottom
+  &__notice-mark
+    background: #0782C3
+    width: 6px
+    height: 6px
+    display: inline-block
+    border-radius: 50%
+    position: absolute
+    top: 0
+    right: 3px
+  &__notice:hover &__notice-img
+    background: url("../img/icon/bell/ic-bell-hover.png")
+  &__notice:active
+    background: #f4f5fc
+    border-radius: 50%
+  &__notice:active &__notice-img
+    background: url("../img/icon/bell/ic-bell-active.png")
+
+
+
+
+
+
+  &__avatar
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    cursor: url("../img/icon/cursor/cursor.png"), pointer
+  avatar-img
+    width: 100%
+    height: 100%

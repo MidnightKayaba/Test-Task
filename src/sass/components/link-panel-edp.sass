@@ -1,0 +1,28 @@
+.link-panel-edp
+  display: flex
+  width: 100%
+  &__item
+    height: 50px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: url("../img/icon/cursor/cursor.png"), pointer
+    font-weight: 700
+    color: #7E83AA
+  &__count
+    font-size: 12px
+    color: #fff
+    background: #056EA5
+    border-radius: 10px
+    padding: 1px 6px
+  &__text
+    font-size: 14px
+    margin-left: 10px
+  &__item.active
+    background: #0782C3
+    color: #fff
+  &__item:not(.active):hover &__count
+    background: #289AD8
+  &__item:not(.active):hover &__text
+    color: #289AD8

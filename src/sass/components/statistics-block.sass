@@ -1,0 +1,55 @@
+.statistics-block
+  width: 100%
+  border-left: 1px solid #f4f5fc
+  border-right: 1px solid #f4f5fc
+  &__menu
+    width: 100%
+    height: 48px
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid #F4F5FC
+  &__count
+    margin-left: 8px
+  &__link
+    height: 100%
+    display: flex
+    align-items: center
+    padding: 0 5px
+    font-size: 12px
+    font-weight: 400
+    color: #3F455F
+    cursor: url("../img/icon/cursor/cursor.png"), pointer
+    &.active
+      padding-top: 4px
+      border-bottom: 4px solid #0782c3
+      color: #0782c3
+  &__avatars
+    width: 100%
+    padding: 10px 0
+    position: relative
+    &-row
+      width: 100%
+      display: flex
+      justify-content: space-between
+      padding: 10px 20px
+    &-element
+      width: 25%
+      justify-content: center
+    &-arrow
+      width: 22px
+      height: 34px
+      border: 1px solid #F4F5FC
+      position: absolute
+      top: calc(50% - 22px)
+      cursor: url("../img/icon/cursor/cursor.png"), pointer
+      &._l
+        background: url("../img/icon/arrow-carousel/arrow left.png")
+        background-repeat: no-repeat
+        background-position: 5px center
+        border-radius: 0 3px 3px 0
+      &._r
+        right: 0
+        background: url("../img/icon/arrow-carousel/arrow right.png")
+        background-repeat: no-repeat
+        background-position: 0 center
+        border-radius: 3px 0 0 3px
